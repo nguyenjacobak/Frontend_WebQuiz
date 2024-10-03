@@ -1,3 +1,35 @@
 * {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
+body {
+    background-image: url('/assets/images/Bg1.jpg'); /* Đường dẫn đến hình ảnh của bạn */
+    background-size: cover; /* Đảm bảo hình ảnh bao phủ toàn bộ trang */
+    background-repeat: no-repeat; /* Không lặp lại hình ảnh */
+    background-attachment: fixed; /* Hình ảnh nền cố định khi cuộn trang */
+    background-position: center; /* Đặt hình ảnh ở giữa trang */
+}
+footer {
+    background-color: #fdfdfd; /* Màu nền riêng cho footer */
+}
+.navbar {
+    background-color: #b5a6a6 !important;
+}
+.carousel-inner {
+    width: 100%;
+    display: flex;
+    justify-content: center; /* Căn giữa theo chiều ngang */
+    align-items: center; /* Căn giữa theo chiều dọc nếu cần */
+}
+.carousel-item {
+    width: 50%; /* Điều chỉnh chiều rộng của slide */
+    height: 50%; /* Điều chỉnh chiều cao của slide */
+    -webkit-background-size: cover;
+    background-size: cover;
+    margin: 0 auto;
+    display: none; /* Ẩn tất cả các slide */
+}
+.carousel-item.active {
+    display: flex; /* Hiển thị slide đang hoạt động */
+    justify-content: center; /* Căn giữa theo chiều ngang */
+    align-items: center; /* Căn giữa theo chiều dọc */
+}
